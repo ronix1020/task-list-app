@@ -7,6 +7,7 @@ import HomeScreen from '../screens/home/HomeScreen';
 import TaskScreen from '../screens/tasks/TaskScreen';
 import { Provider } from 'react-redux';
 import { reduxStore } from '../redux/store';
+import ListScreen from '../screens/list/ListScreen';
 
 declare global {
     namespace ReactNavigation {
@@ -25,6 +26,7 @@ const App = () => {
                 <Stack.Navigator screenOptions={{ headerShown: false }}>
                     <Stack.Screen name="Home" component={ HomeScreen } />
                     <Stack.Screen name="Tasks" component={ TaskScreen } />
+                    <Stack.Screen name="List" component={ ListScreen } />
                 </Stack.Navigator>
             </SafeAreaProvider>
         </Provider>

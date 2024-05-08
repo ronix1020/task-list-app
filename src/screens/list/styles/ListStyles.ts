@@ -2,17 +2,15 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    padding: 20,
-    gap: 10,
+    marginHorizontal: 20,
+    marginVertical: 20,
   },
-  button: {
+  title: {
+    fontWeight: 'bold',
+    textAlign: 'center',
     marginBottom: 20,
   },
-  divider: {
+  divisor: {
     height: 10,
-  },
-  backButton: {
-    width: '100%',
-    height: 40,
   },
 });

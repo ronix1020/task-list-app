@@ -9,6 +9,7 @@ import AddTaskModal from '../../components/AddTaskModal';
 import {StoreInterface} from '../../interfaces/StoreInterface';
 import TaskStyles from './styles/TaskStyles';
 import {Colors} from '../../theme/globalTheme';
+import BackButton from '../../components/BackButton';
 
 const TaskScreen = () => {
   const tasks = useSelector((state: StoreInterface) => state.tasks.task);
@@ -16,6 +17,9 @@ const TaskScreen = () => {
 
   return (
     <MainLayout styles={TaskStyles.container}>
+      <View style={TaskStyles.backButton}>
+        <BackButton />
+      </View>
       <SimpleButton
         color={Colors.primary}
         onPress={() => setShowModal(true)}

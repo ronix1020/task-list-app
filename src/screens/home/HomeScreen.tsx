@@ -23,7 +23,7 @@ const HomeScreen = () => {
       </SimpleButton>
       <SimpleButton
         color={Colors.primary}
-        onPress={() => console.log('Go to Detail')}
+        onPress={() => navigate('List')}
         style={HomeStyles.button}>
         <Icon name="list" size={20} color={Colors.black} />
         <SimpleText size={20} color={Colors.black}>
