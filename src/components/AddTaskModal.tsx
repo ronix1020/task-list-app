@@ -46,13 +46,17 @@ const AddTaskModal = ({visible, show}: AddTaskModalProps) => {
             Add new task
           </SimpleText>
           <SimpleInput
+            testId={'TaskInput'}
             placeholder={'Task...'}
             text={task}
             setText={setTask}
             multiline
             style={styles.input}
           />
-          <SimpleButton color={Colors.primary} onPress={onAddTask}>
+          <SimpleButton
+            testId="SaveTaskButton"
+            color={Colors.primary}
+            onPress={onAddTask}>
             <SimpleText size={18}>Add</SimpleText>
           </SimpleButton>
         </View>

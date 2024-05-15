@@ -8,6 +8,7 @@ interface SimpleInputProps {
   setText: (text: string) => void;
   multiline?: boolean;
   style?: TextStyle;
+  testId?: string;
 }
 
 const SimpleInput = ({
@@ -16,9 +17,11 @@ const SimpleInput = ({
   setText,
   multiline,
   style,
+  testId,
 }: SimpleInputProps) => {
   return (
     <TextInput
+      testID={testId}
       style={[styles.input, style]}
       multiline={multiline}
       numberOfLines={4}

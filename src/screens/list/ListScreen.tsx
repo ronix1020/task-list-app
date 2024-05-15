@@ -24,13 +24,14 @@ const ListScreen = () => {
   return (
     <MainLayout styles={ListStyles.container}>
       <BackButton />
-      <SimpleText size={24} style={ListStyles.title}>
+      <SimpleText testId="ListTitle" size={24} style={ListStyles.title}>
         Lists
       </SimpleText>
       {elements.length <= 0 ? (
         <ActivityIndicator color={Colors.primary} size={'large'} />
       ) : (
         <FlatList
+          testID="ListFlatList"
           data={elements}
           ItemSeparatorComponent={() => <View style={ListStyles.divisor} />}
           renderItem={({item}) => <ListItem {...item} />}

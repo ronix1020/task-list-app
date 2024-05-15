@@ -13,6 +13,7 @@ const HomeScreen = () => {
   return (
     <MainLayout styles={HomeStyles.container}>
       <SimpleButton
+        testId='TaskButton'
         color={Colors.primary}
         onPress={() => navigate('Tasks')}
         style={HomeStyles.button}>
@@ -22,6 +23,7 @@ const HomeScreen = () => {
         </SimpleText>
       </SimpleButton>
       <SimpleButton
+        testId='ListButton'
         color={Colors.primary}
         onPress={() => navigate('List')}
         style={HomeStyles.button}>

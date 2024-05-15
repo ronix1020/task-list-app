@@ -6,6 +6,7 @@ interface SimpleTextProps {
   color?: string;
   size?: number;
   style?: TextStyle;
+  testId?: string;
 }
 
 const SimpleText = ({
@@ -13,9 +14,11 @@ const SimpleText = ({
   color = '#000000',
   size = 14,
   style,
+  testId,
 }: SimpleTextProps) => {
   return (
     <Text
+      testID={testId}
       style={{
         color: color,
         fontSize: size,

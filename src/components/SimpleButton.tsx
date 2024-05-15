@@ -6,6 +6,7 @@ interface SimpleButtonProps {
   onPress: () => void;
   color?: string;
   style?: ViewStyle;
+  testId?: string;
 }
 
 const SimpleButton = ({
@@ -13,9 +14,11 @@ const SimpleButton = ({
   onPress,
   color = '#5b5b5b',
   style,
+  testId,
 }: SimpleButtonProps) => {
   return (
     <TouchableOpacity
+      testID={testId}
       activeOpacity={0.7}
       onPress={onPress}
       style={[styles.button, {backgroundColor: color}, style]}>

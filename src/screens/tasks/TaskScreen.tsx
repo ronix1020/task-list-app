@@ -21,10 +21,13 @@ const TaskScreen = () => {
         <BackButton />
       </View>
       <SimpleButton
+        testId="AddTaskButton"
         color={Colors.primary}
         onPress={() => setShowModal(true)}
         style={TaskStyles.button}>
-        <SimpleText size={20}>New task</SimpleText>
+        <SimpleText testId="newTaskText" size={20}>
+          New task
+        </SimpleText>
       </SimpleButton>
       <FlatList
         data={tasks}
