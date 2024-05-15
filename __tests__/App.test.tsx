@@ -1,4 +1,3 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import App from "../src/navigators/RootNavigator";
 import { act } from "@testing-library/react-native";
 import renderer from 'react-test-renderer';

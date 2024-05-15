@@ -1,5 +1,5 @@
-import {fireEvent, render, screen} from '@testing-library/react-native';
 import {Provider} from 'react-redux';
+import {fireEvent, render, screen} from '@testing-library/react-native';
 import TaskScreen from '../../src/screens/tasks/TaskScreen';
 import {reduxStore} from '../../src/redux/store';
 import {NavigationContainer} from '@react-navigation/native';

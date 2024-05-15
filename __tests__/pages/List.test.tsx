@@ -1,5 +1,5 @@
-import {render, screen, waitFor} from '@testing-library/react-native';
 import {Provider} from 'react-redux';
+import {render, screen, waitFor} from '@testing-library/react-native';
 import {reduxStore} from '../../src/redux/store';
 import {NavigationContainer} from '@react-navigation/native';
 import ListScreen from '../../src/screens/list/ListScreen';
