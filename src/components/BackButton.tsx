@@ -1,5 +1,4 @@
 import React from 'react';
-import SimpleButton from './SimpleButton';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../theme/globalTheme';
 import {useNavigation} from '@react-navigation/native';

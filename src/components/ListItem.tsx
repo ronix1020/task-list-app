@@ -4,13 +4,18 @@ import {ApiRequestInterface} from '../interfaces/ApiInterface';
 import {Colors} from '../theme/globalTheme';
 import SimpleText from './SimpleText';
 
-const ListItem = ({avatar, name, username}: ApiRequestInterface) => {
+interface ListItemProps extends ApiRequestInterface {
+  testID?: string;
+}
+
+const ListItem = ({avatar, name, username, testID}: ListItemProps) => {
   // fakercloud is a fake image generator, not work in this case
   let image = avatar.includes('fakercloud')
     ? 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg'
     : avatar;
-  return (
-    <View style={styles.container}>
+
+  if (name) return (
+    <View testID={testID} style={styles.container}>
       <SimpleText>{name}</SimpleText>
       {username && <SimpleText>{username}</SimpleText>}
       <Image source={{uri: image}} style={styles.image} />

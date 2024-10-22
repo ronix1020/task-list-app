@@ -34,7 +34,7 @@ const ListScreen = () => {
           testID="ListFlatList"
           data={elements}
           ItemSeparatorComponent={() => <View style={ListStyles.divisor} />}
-          renderItem={({item}) => <ListItem {...item} />}
+          renderItem={({item}) => <ListItem testID="ListCardItem" {...item} />}
           keyExtractor={item => item.id}
         />
       )}
